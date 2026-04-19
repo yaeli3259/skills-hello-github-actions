@@ -1,10 +1,10 @@
-on: 
-   schedule:
-     - cron:'*/2 * * * *'
+on:
+  schedule:
+    - cron: '*/2 * * * *'
 
 jobs:
   hello_world:
     runs-on: ubuntu-latest
     steps:
       - name: Echo current time
-        run: exho "The current server thime is $(date)"
+        run: echo "The current server time is $(date)"
